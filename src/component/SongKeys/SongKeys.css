@@ -1,0 +1,32 @@
+.keypad{
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
+}
+
+.onekey {
+  font-size: 2em;
+  font-weight: bold;
+  background-image: linear-gradient(to top, hsl(311, 100%, 87%), #ff99d4, #ff80d0 );
+  backgroud-color: white;
+  color: #0c121d;
+  border-style: outset;
+  border-color: #7190c1;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.onekey:enabled:hover{
+  background-image: linear-gradient(to top, hsl(55, 100%, 86%), #fbc1e3, #ffa8df );
+}
+
+.onekey:disabled:hover{
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 850px){
+  .onekey{
+    padding: 30px 0 30px;
+  }
+}
